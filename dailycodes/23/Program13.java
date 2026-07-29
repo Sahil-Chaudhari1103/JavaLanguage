@@ -1,0 +1,24 @@
+
+class Demo{
+        Demo(){
+                System.out.println("Demo Constructor");
+        }
+}
+
+class DemoChild extends Demo{
+        DemoChild(){
+		this(10);                                      // error: recursive constructor invocation
+                System.out.println("DemoChild Constructor");
+        }
+
+        DemoChild(int x){
+		this();
+                System.out.println("DemoChild Constructor - Para");
+        }
+}
+
+class Client{
+        public static void main(String[] args){
+                DemoChild obj1 = new DemoChild(10);
+        }
+}
