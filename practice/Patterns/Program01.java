@@ -390,12 +390,12 @@ class Pattern{
 		int num = 1;
 		int count = rows-1;
 		for(int i=1 ; i<=(rows*2-1) ; i++){
-			if(i<=rows){                                            // 1
+			if(i<=rows){                                        // 1
 				for(int j=1 ; j<=i ; j++){                      // 2  3
-					System.out.printf( "%4d" , num );       // 4  5  6
-					num++;                                  // 7  8  9  10
+					System.out.printf( "%4d" , num );       	// 4  5  6
+					num++;                                  	// 7  8  9  10
 				}                                               // 9  8  7
-			}else{                                                  // 6  5
+			}else{                                              // 6  5
 				for(int j=1 ; j<=count ; j++){                  // 4
 					num--;
 					System.out.printf( "%4d" , num-1 );
@@ -410,13 +410,13 @@ class Pattern{
 		int count = rows-1;
 		for(int i=1 ; i<=(rows*2-1) ; i++){
 			if(i<=rows){                                                
-				int num = i;					// 1
-				for(int j=1 ; j<=i ; j++){                      // 2  1
-					System.out.printf( "%4d" , num );       // 3  2  1
-					num--;                                  // 4  3  2  1
-				}                                               // 3  2  1
+				int num = i;										// 1
+				for(int j=1 ; j<=i ; j++){                      	// 2  1
+					System.out.printf( "%4d" , num );      		 	// 3  2  1
+					num--;                                  		// 4  3  2  1
+				}                                               	// 3  2  1
 			}else{                                                  // 2  1
-				int num = count;				// 1
+				int num = count;									// 1
 				for(int j=1 ; j<=count ; j++){                  
 					System.out.printf( "%4d" , num );
 					num--;
@@ -430,10 +430,10 @@ class Pattern{
 	void pattern34(int rows){
 		int num;
 		for(int i=1 ; i<=rows ; i++){
-			if(i%2==1){						        // 1 0 1 0 1
-				for(int j=1 ; j<=rows ; j++){			        // 0 1 0 1 0
-					if(j%2==1){				        // 1 0 1 0 1
-						num = 1;			        // 0 1 0 1 0
+			if(i%2==1){						       	 	// 1 0 1 0 1
+				for(int j=1 ; j<=rows ; j++){			// 0 1 0 1 0
+					if(j%2==1){				        	// 1 0 1 0 1
+						num = 1;			        	// 0 1 0 1 0
 						System.out.printf("%4d" ,num );	// 1 0 1 0 1
 					}else{
 						num = 0;
@@ -461,11 +461,11 @@ class Pattern{
 		int num;
                 for(int i=1 ; i<=rows ; i++){
                         if(i%2==1){                          
-	     			num = 1;					// 1 2 1 2 1
-                                for(int j=1 ; j<=rows ; j++){			// 2 1 2 1 2
+	     			num = 1;													// 1 2 1 2 1
+                                for(int j=1 ; j<=rows ; j++){					// 2 1 2 1 2
                                         if(j%2==1){                             // 1 2 1 2 1
                                                 System.out.printf("%4d" ,num ); // 2 1 2 1 2
-                                                num++;				// 1 2 1 2 1
+                                                num++;							// 1 2 1 2 1
                                         }else{
                                                 System.out.printf("%4d" ,num );
 						num--;
@@ -518,11 +518,11 @@ class Pattern{
 
 	void pattern37(int rows){
 		char ch = 65;	
-                for(int i=1 ; i<=rows ; i++){				 // A
-                        for(int j=1 ; j<=i ; j++){			 // B C
-                                System.out.printf( "   " + ch );     	 // D E F
-                                ch++;		                         // G H I J
-                        }						 // K L M N O
+                for(int i=1 ; i<=rows ; i++){				 			// A
+                        for(int j=1 ; j<=i ; j++){			 			// B C
+                                System.out.printf( "   " + ch );     	// D E F
+                                ch++;		                         	// G H I J
+                        }						 						// K L M N O
                         System.out.println();
                 }
         }
@@ -533,8 +533,8 @@ class Pattern{
                         if(i%2==1){                                             // A
                                 for(int j=1 ; j<=i ; j++){                      // C B
                                                System.out.print( "   " + ch );  // D E F
-					       ch++; 				// J I H G
-                                }						// K L M N O
+					       ch++; 												// J I H G
+                                }												// K L M N O
 				ch = (char) (ch + i);			
                         }else{						
                                 for(int k=1 ; k<=i ; k++){
@@ -551,7 +551,7 @@ class Pattern{
 	void pattern39(int rows){
                 int num = 1;
                 for(int i=1 ; i<=rows ; i++){
-                        if(i%2==1){						  // 1
+                        if(i%2==1){						  						  // 1
                                 for(int j=1 ; j<=i ; j++){                        // 2  3
                                                System.out.printf( "%4d" , num );  // 6  5  4
                                                num--;                             // 7  8  9  10
@@ -573,9 +573,9 @@ class Pattern{
 		int num = 1;
 		for(int i=1; i<=rows ; i++){				//              1
 			for(int j=1 ; j<=rows-i ; j++){			//           2  3
-				System.out.printf("    ");		//        4  5	6
-			}						//     7  8  9 10
-			for(int k=1 ; k<=i ; k++){			// 11 12 13 14 15
+				System.out.printf("    ");			//        4  5	6
+			}										//     7  8  9 10
+			for(int k=1 ; k<=i ; k++){				// 11 12 13 14 15
 				System.out.printf("%4d" , num );
 				num++;
 			}
@@ -586,7 +586,7 @@ class Pattern{
 	void pattern41(int rows){
 		int count = rows;
                 for(int i=1; i<=rows ; i++){
-		        int num = ((count*count)-(count-2))/2;         	// 11 12 13 14 15
+		        int num = ((count*count)-(count-2))/2;         			// 11 12 13 14 15
                         for(int j=1 ; j<=(rows-count) ; j++){           //     7  8  9 10
                                 System.out.printf("    ");              //        4  5  6
                         }                                               //           3  2
@@ -601,7 +601,7 @@ class Pattern{
 
 	void pattern42(int rows){
                 for(int i=1 ; i<=rows ; i++){
-			int num = i;           	       			 // 1
+			int num = i;           	       			 					 // 1
                         for(int j=1 ; j<=i ; j++){                       // 2  6
                                 System.out.printf( "%4d" , num );        // 3  7 10
                                 num = num + rows-j;                      // 4  8 11 13
@@ -613,13 +613,13 @@ class Pattern{
 	void pattern43(int rows){
 		int num = 1;
 		int temp = 1;
-                for(int i=1 ; i<=rows ; i++){				 // 1
+                for(int i=1 ; i<=rows ; i++){							 // 1
                         for(int j=1 ; j<=i ; j++){                       // 2  4
                                 System.out.printf( "%4d" , num );        // 3  5  7
                                 num = num + 2;                           // 6  8 10 12
-                        }						 // 9 11 13 15 17
-					                	         //14 16 18 20 22 24
-			if(i%2 == 0){				         //19 21 23 25 27 29 31
+                        }						 						 // 9 11 13 15 17
+					                	         						 //14 16 18 20 22 24
+			if(i%2 == 0){				         						 //19 21 23 25 27 29 31
 				temp = temp + 2;			
 			}	
 			num = num - temp;	
@@ -722,11 +722,11 @@ class Pattern{
 	void pattern52(int rows){
                 int num = 1;
 		int count = 3;
-                for(int i=1 ; i<=rows ; i++){                                     //  1
-                        for(int j=1 ; j<=i ; j++){                                //  2   3
-				if(i>2){					  //  4   9  16
-					System.out.printf( "%8d" , num );         // 25  36  49  64
-			      		count = count + 2;		          // 81 100 121 144 169
+                for(int i=1 ; i<=rows ; i++){                                     	//  1
+                        for(int j=1 ; j<=i ; j++){                                	//  2   3
+				if(i>2){					  										//  4   9  16
+					System.out.printf( "%8d" , num );         						// 25  36  49  64
+			      		count = count + 2;		         					 		// 81 100 121 144 169
 					num = num + count;			  
 				}else{
 					System.out.printf( "%8d" , num );
@@ -739,7 +739,7 @@ class Pattern{
 
 	void pattern53(int rows){
                 for(int i=1 ; i<=rows ; i++){
-			char ch = (char)(64+i);			         // A 
+			char ch = (char)(64+i);			         					 // A 
                         for(int j=1 ; j<=i ; j++){                       // B  A
                                 System.out.print( "   " + ch );          // C  B  A
                                 ch--;                                    // D  C  B  A
@@ -756,7 +756,7 @@ class Pattern{
                         for(int j=1 ; j<=i ; j++){                       // D  E
                                 System.out.print( "   " + ch );          // C  D  E
                                 ch++;                                    // B  C  D  E
-                        }						 // A  B  C  D  E
+                        }						 						 // A  B  C  D  E
 			num--;
                         System.out.println();
                 }
@@ -779,8 +779,8 @@ class Pattern{
                         char ch = (char)(64+i);                          // A  B  C  D  E
                         for(int j=1 ; j<=(rows-num) ; j++){              //    B  C  D  E
                                 System.out.print( "    " );              //       C  D  E
-                        }						 //          D  E
-			for(int j=1 ; j<=num ; j++){                     //             E
+                        }						 						 //          D  E
+			for(int j=1 ; j<=num ; j++){                     			 //             E
                                 System.out.print( "   " + ch );          
                                 ch++;                                    
                         }
@@ -808,7 +808,7 @@ class Pattern{
 	void pattern58(int rows){
                 int temp = 1;
                 for(int i=1 ; i<=rows ; i++){
-			int num = i;	  	                         //         1
+			int num = i;	  	                         				 //         1
                         for(int j=1 ; j<=(rows-i) ; j++){                //       2 1 2
                                 System.out.print( "    " );              //     3 2 1 2 3
                         }                                                //   4 3 2 1 2 3 4
@@ -867,7 +867,7 @@ class Pattern{
 
 	void pattern61(int rows){
                 for(int i=1 ; i<=rows ; i++){ 
-			int num = i;              			 //     1
+			int num = i;              			 						 //     1
                         for(int j=1 ; j<=(rows-i) ; j++){                //    2 3
                                 System.out.print( "  " );                //   3 4 5
                         }                                                //  4 5 6 7
@@ -896,9 +896,9 @@ class Pattern{
 	void pattern63(int rows){
                 for(int i=1 ; i<=rows ; i++){				// *
                         for(int j=1 ; j<=i ; j++){			// * *
-			 	if(j==1 || i==rows || i==j){		// *   *
-					System.out.print("   *" );	// *     *
-				}else{					// * * * * *
+			 	if(j==1 || i==rows || i==j){				// *   *
+					System.out.print("   *" );				// *     *
+				}else{										// * * * * *
 					System.out.print("    ");
 				}	  
                         }
@@ -923,7 +923,7 @@ class Pattern{
                 for(int i=1 ; i<=rows ; i++){
 			for(int j=1 ; j<=rows-i ; j++){
 				System.out.print(" ");
-			}			                        //     * 
+			}			                        						//     * 
                         for(int k=1 ; k<=i ; k++){                      //    * *
                                 if( i==rows || k==1 || i==k){           //   *   *      
                                         System.out.print(" *" );        //  *     *
@@ -955,12 +955,12 @@ class Pattern{
 		int count = 1;
                 for(int i=1 ; i<=rows ; i++){
                         for(int j=1 ; j<=rows-i ; j++){
-                                System.out.print(" ");			//       *
+                                System.out.print(" ");					//       *
                         }                                               //      ***
-                        for(int k=1 ; k<=count ; k++){			//     ** **
-	      			if(i<=2){				//    *** ***
-					System.out.print("*");		//   **** ****
-				}else if(i==rows || k!=i && i>2){       //  ***** *****     
+                        for(int k=1 ; k<=count ; k++){					//     ** **
+	      			if(i<=2){											//    *** ***
+					System.out.print("*");								//   **** ****
+				}else if(i==rows || k!=i && i>2){       				//  ***** *****     
                                         System.out.print("*" );         // *************  
                                 }else{                                      
                                         System.out.print(" ");		
@@ -976,10 +976,10 @@ class Pattern{
 		int count = 0;
 		int m = temp;
 		for(int i=1 ; i<=rows ; i++){				        // 1           1             1              1
-			int num = 1;						// 1  2     2  1             1  2        2  1
-			if(i==temp ){			                	// 1  2  3  2  1      &      1  2  3  3  2  1    
-				for(int j=1 ; j<=rows ; j++){ 			// 1  2     2  1             1  2  3  3  2  1
-					System.out.printf("%4d" , num);		// 1           1             1  2        2  1
+			int num = 1;									// 1  2     2  1             1  2        2  1
+			if(i==temp ){			                		// 1  2  3  2  1      &      1  2  3  3  2  1    
+				for(int j=1 ; j<=rows ; j++){ 				// 1  2     2  1             1  2  3  3  2  1
+					System.out.printf("%4d" , num);			// 1           1             1  2        2  1
 					if(rows%2==0 && j==(rows/2)){           //                           1              1
 						num = num;
 					}else if(j<temp){					
@@ -1073,15 +1073,15 @@ class Pattern{
 		for(int i=1 ; i<=(rows*2-1) ; i++){
 			int num = 1;
 			if(i<=rows){
-				for(int j=1 ; j<=(rows-i+1) ; j++){		// 1  2  3  4  5
-					System.out.printf("%4d" , num);		// 1  2  3  4
-		      			num++;					// 1  2  3 
-				}						// 1  2
-				System.out.println();				// 1
-			}else{							// 1  2 
-				for(int k=1 ; k<=(i-rows+1) ; k++){             // 1  2  3 
-					System.out.printf("%4d" , num);		// 1  2  3  4
-			      		num++;		 			// 1  2  3  4  5
+				for(int j=1 ; j<=(rows-i+1) ; j++){					// 1  2  3  4  5
+					System.out.printf("%4d" , num);					// 1  2  3  4
+		      			num++;										// 1  2  3 
+				}													// 1  2
+				System.out.println();								// 1
+			}else{													// 1  2 
+				for(int k=1 ; k<=(i-rows+1) ; k++){             	// 1  2  3 
+					System.out.printf("%4d" , num);					// 1  2  3  4
+			      		num++;		 								// 1  2  3  4  5
 				}
 				System.out.println();
 			}
@@ -1111,9 +1111,9 @@ class Pattern{
 		int num = 1;
 		int temp = 1;
 		int count = rows*2-1;		
-                for(int i=1 ; i<=(rows*2-1) ; i++){				// 1 
-                        if(i<=rows){						// 2  3
-                                for(int j=1 ; j<=i ; j++){            		// 4  5  6
+                for(int i=1 ; i<=(rows*2-1) ; i++){								// 1 
+                        if(i<=rows){											// 2  3
+                                for(int j=1 ; j<=i ; j++){            			// 4  5  6
                                         System.out.printf("%4d" , num);         // 7  8  9  10
                                         num++;                                  // 4  5  6
                                 }                                               // 2  3
@@ -1164,8 +1164,8 @@ class Pattern{
                         if(i<=rows){                                            // 2  2
                                 for(int j=1 ; j<=i ; j++){                      // 3  3  3
                                         System.out.printf("%4d" , num);         // 4  4  4  4
-                                }						// 3  3  3
-				num++;			   	                // 2  2
+                                }												// 3  3  3
+				num++;			   	                							// 2  2
                                 System.out.println();                           // 1
                         }else{
 				if(i == rows+1){
@@ -1187,8 +1187,8 @@ class Pattern{
                 for(int i=1 ; i<=(rows*2-1) ; i++){                             // 1
                         if(i<=rows){                                            // 2  1
                                 for(int j=1 ; j<=i ; j++){                      // 3  2  1
-                                        System.out.printf("%4d" , num);		// 4  3  2  1
-			       		num--;		                        // 3  2  1
+                                        System.out.printf("%4d" , num);			// 4  3  2  1
+			       		num--;		                        					// 3  2  1
                                 }                                               // 2  1
                                 num = i+1;                                      // 1
                                 System.out.println();                           
@@ -1213,11 +1213,11 @@ class Pattern{
                 int temp = mid;
 		int count = 0;
                 for(int i=1 ; i<=rows ; i++){                                       // 1  2  3  4  5           1  2  3  4  5  6
-                        if(i<=mid){						    //    2  3  4		  2  3  4  5
-				if(rows%2 == 0 && i == mid){			    //       3	 	 or	     3  4
-					num = mid-1;				    //    2  3  4		     3  4
-					for(int j=1 ; j<=(rows/2-1) ; j++){	    // 1  2  3  4  5		  2  3  4  5  
-						System.out.print("    ");	    //                         1  2  3  4  5  6
+                        if(i<=mid){						    						//    2  3  4		          2  3  4  5
+				if(rows%2 == 0 && i == mid){			   							//       3	 	 or	             3  4
+					num = mid-1;				    								//    2  3  4		             3  4
+					for(int j=1 ; j<=(rows/2-1) ; j++){	    						// 1  2  3  4  5		      2  3  4  5  
+						System.out.print("    ");	   							    //                         1  2  3  4  5  6
 					}
 					for(int k=1 ; k<=2 ; k++){
                                                 System.out.printf("%4d" , num);
@@ -1261,10 +1261,10 @@ class Pattern{
 	void pattern76(int rows){
 		int count = 1;
 		for(int i = 1; i<=rows ; i++){                       	//             1
-			int num = 1;                                	//          1  2  1 
-			for(int j=1 ; j<=(rows-i) ; j++){		//       1  2  3  2  1
-				System.out.print("    ");		//    1  2  3  4  3  2  1
-			}						// 1  2  3  4  5  4  3  2  1
+			int num = 1;                                		//          1  2  1 
+			for(int j=1 ; j<=(rows-i) ; j++){					//       1  2  3  2  1
+				System.out.print("    ");						//    1  2  3  4  3  2  1
+			}													// 1  2  3  4  5  4  3  2  1
 			for(int k=1 ; k<=count ; k++){
 				System.out.printf("%4d" , num);
 				if(k<i){
@@ -1281,10 +1281,10 @@ class Pattern{
 	void pattern77(int rows){
                 int count = rows*2-1;
                 for(int i = 1; i<=rows ; i++){				// 1  2  3  4  5  4  3  2  1
-                        int num = 1;					//    1  2  3  4  3  2  1
-                        for(int j=1 ; j<=(i-1) ; j++){			//       1  2  3  2  1 
-                                System.out.print("    ");		//          1  2  1 
-                        }						//             1
+                        int num = 1;						//    1  2  3  4  3  2  1
+                        for(int j=1 ; j<=(i-1) ; j++){		//       1  2  3  2  1 
+                                System.out.print("    ");	//          1  2  1 
+                        }									//             1
                         for(int k=1 ; k<=count ; k++){
                                 System.out.printf("%4d" , num);
                                 if( k<(rows-i+1) ){
@@ -1334,11 +1334,11 @@ class Pattern{
 		int mid = (int)(rows/2+1);
 		int temp = mid-1;
 		for(int i = 1; i<=rows ; i++){                                   // 1           1		 1              1
-			int num = i;						 //    2     2			    2        2
-			if(i<=mid){						 //       3             or   	       3  3
-				for(int j=1 ; j<=rows ; j++){			 //    4     4			       4   4
-		      			if(i==j || j == (rows-i+1)){		 // 5           5                   5        5
-						System.out.printf("%4d" , num);  //                              6              6
+			int num = i;						 						 //    2     2			    2        2
+			if(i<=mid){						 							 //       3             or     3  3
+				for(int j=1 ; j<=rows ; j++){			 				 //    4     4			       4   4
+		      			if(i==j || j == (rows-i+1)){		 			 // 5           5            5        5
+						System.out.printf("%4d" , num); 				 //                       6              6
 					}else{		
 						System.out.printf("    ");
 			 		}	
@@ -1365,14 +1365,14 @@ class Pattern{
 	void pattern80(int rows){
                 int num = 1;
                 int temp = rows-1;
-                for(int i=1; i<=rows*2-1 ; i++) {				// * * * * * * * * *
-                        for(int j=1; j<=(rows*2-1) ; j++){			// * * * *   * * * *
-                                if(i==1 || i==(rows*2-1)){			// * * *       * * *
-                                        System.out.print(" *");			// * *           * *
-                                }else{						// *               *
-                                        if(j <= temp){				// * *           * *
+                for(int i=1; i<=rows*2-1 ; i++) {							// * * * * * * * * *
+                        for(int j=1; j<=(rows*2-1) ; j++){					// * * * *   * * * *
+                                if(i==1 || i==(rows*2-1)){					// * * *       * * *
+                                        System.out.print(" *");				// * *           * *
+                                }else{										// *               *
+                                        if(j <= temp){						// * *           * *
                                                 System.out.print(" *");		// * * *       * * *
-                                        }else if(j <= temp+num){		// * * * *   * * * *
+                                        }else if(j <= temp+num){			// * * * *   * * * *
                                                 System.out.print("  ");		// * * * * * * * * *
                                         }else{
                                                 System.out.print(" *");
@@ -1395,11 +1395,11 @@ class Pattern{
 	void pattern81(int rows){
 		for(int i=1 ; i<=rows ; i++){
 			char ch = 'A';
-			for(int j=1 ; j<=rows ; j++){				// A  B  C  D  E 
+			for(int j=1 ; j<=rows ; j++){					// A  B  C  D  E 
 				if(i==1 || j==1 || i==rows || j==rows){		// A           E
-					System.out.print(" " + ch);		// A           E 
-				}else{						// A           E
-					System.out.print("  ");			// A  B  C  D  E
+					System.out.print(" " + ch);				// A           E 
+				}else{										// A           E
+					System.out.print("  ");					// A  B  C  D  E
 				}
 				ch++;
 			}
@@ -1425,13 +1425,13 @@ class Pattern{
 	void pattern83(int rows){
 		if(rows%2==1){
 			int num = 1;
-			int mid = (int)(rows/2+1);					// 1   2   3   4   5   6   7
-			int fix = 4;							// 24  25  26  27  28  29  8
-			int m = 0;							// 23  40  41  42  43  30  9
+			int mid = (int)(rows/2+1);							// 1   2   3   4   5   6   7
+			int fix = 4;										// 24  25  26  27  28  29  8
+			int m = 0;											// 23  40  41  42  43  30  9
 			int last = 5 * (mid-1) + (3 * (mid-2));				// 22  39  48  49  44  31  10
-			int first = 9 * (mid-2) - (mid-3);				// 21  38  47  46  45  32  11
-			int nextM = 0;							// 20  37  36  35  34  33  12
-			int range = 0;							// 19  18  17  16  15  14  13
+			int first = 9 * (mid-2) - (mid-3);					// 21  38  47  46  45  32  11
+			int nextM = 0;										// 20  37  36  35  34  33  12
+			int range = 0;										// 19  18  17  16  15  14  13
 			int forLast = mid-3;						
 			for(int i=1 ; i<=rows ; i++){
 				if(i==1){ 
@@ -1513,13 +1513,13 @@ class Pattern{
 			int fix = 4;
 			int m = 1;
 			int first = (5 * ((mid-1)-1) + (3 * ((mid-1)-2)));		// 1   2   3   4   5   6   7   8
-			int last = 9 * (mid-2) - (mid-3);				// 28  29  30  31  32  33  34  9
-			int nextM = 0;							// 27  48  49  50  51  52  35  10
-			int forLast = rows/2-3;						// 26  47  60  61  62  53  36  11
-			int range2 = 3;							// 25  46  59  64  63  54  37  12
-			for(int i=1 ; i<=rows ; i++){					// 24  45  58  57  56  55  38  13
-				if(i==1){						// 23  44  43  42  41  40  39  14
-					for(int j=1 ; j<=rows ; j++){			// 22  21  20  19  18  17  16  15
+			int last = 9 * (mid-2) - (mid-3);						// 28  29  30  31  32  33  34  9
+			int nextM = 0;											// 27  48  49  50  51  52  35  10
+			int forLast = rows/2-3;									// 26  47  60  61  62  53  36  11
+			int range2 = 3;											// 25  46  59  64  63  54  37  12
+			for(int i=1 ; i<=rows ; i++){							// 24  45  58  57  56  55  38  13
+				if(i==1){											// 23  44  43  42  41  40  39  14
+					for(int j=1 ; j<=rows ; j++){					// 22  21  20  19  18  17  16  15
 						System.out.printf("%4d" , num);
 						num++;
 					}
@@ -1590,13 +1590,13 @@ class Pattern{
 			int mid = (int) (rows/2+1);
 			int m = 0;
 			int range = 0;
-			for(int i=1 ; i<=rows ; i++){						// 49 48 47 46 45 44 43
-				if(i==1){							// 26 25 24 23 22 21 42
-					for(int j=1 ; j<=rows ; j++){				// 27 10  9  8  7 20 41 
-						System.out.printf("%4d" , ((rows*rows-j)+1));	// 28 11  2  1  6 19 40
-					}							// 29 12  3  4  5 18 39
-				}else if(i<=mid){						// 30 13 14 15 16 17 38
-					int num = (((rows-2)*(rows-2))+1) + m ;			// 31 32 33 34 35 36 37
+			for(int i=1 ; i<=rows ; i++){										// 49 48 47 46 45 44 43
+				if(i==1){														// 26 25 24 23 22 21 42
+					for(int j=1 ; j<=rows ; j++){								// 27 10  9  8  7 20 41 
+						System.out.printf("%4d" , ((rows*rows-j)+1));			// 28 11  2  1  6 19 40
+					}															// 29 12  3  4  5 18 39
+				}else if(i<=mid){												// 30 13 14 15 16 17 38
+					int num = (((rows-2)*(rows-2))+1) + m ;						// 31 32 33 34 35 36 37
 					int firstGap = (9 * (mid-2) - (mid-3)) + 8; 
 					int lastGap = ((5 * (mid-1)) + (3*(mid-2))) - (8*m) ;
 					for(int j=1 ; j<=rows ; j++){
@@ -1648,14 +1648,14 @@ class Pattern{
 			int mid = (int) (rows/2+1);
                         int m = 0;
                         int range = 0;
-                        for(int i=1 ; i<=rows ; i++){						// 64 63 62 61 60 59 58 57
-                                if(i==1){							// 37 36 35 34 33 32 31 56
-                                        for(int j=1 ; j<=rows ; j++){				// 38 17 16 15 14 13 30 55
+                        for(int i=1 ; i<=rows ; i++){											// 64 63 62 61 60 59 58 57
+                                if(i==1){														// 37 36 35 34 33 32 31 56
+                                        for(int j=1 ; j<=rows ; j++){							// 38 17 16 15 14 13 30 55
                                                 System.out.printf("%4d" , ((rows*rows-j)+1));	// 39 18  5  4  3 12 29 54
-                                        }							// 40 19  6  1  2 11 28 53
-                                }else if(i<=mid){						// 41 20  7  8  9 10 27 52
-                                        int num = (((rows-2)*(rows-2))+1) + m ;			// 42 21 22 23 24 25 26 51
-                                        int lastGap = (9 * (mid-2) - (mid-3)) - (8*m);		// 43 44 45 46 47 48 49 50
+                                        }														// 40 19  6  1  2 11 28 53
+                                }else if(i<=mid){												// 41 20  7  8  9 10 27 52
+                                        int num = (((rows-2)*(rows-2))+1) + m ;					// 42 21 22 23 24 25 26 51
+                                        int lastGap = (9 * (mid-2) - (mid-3)) - (8*m);			// 43 44 45 46 47 48 49 50
                                         int firstGap = ((5 * (mid-2)) + (3*(mid-3))) + 8 ;
                                         for(int j=1 ; j<=rows ; j++){
                                                 if(j==1){
