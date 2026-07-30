@@ -1713,25 +1713,25 @@ class Pattern{
 			System.out.println("Available Patterns:\n"+
 					"01 : Pattern01 " + "       " + "21 : Pattern21 " + "       " + "41 : Pattern41 " + "       " + "61 : Pattern61 " + "       " + "81 : Pattern81\n"+
 					"02 : Pattern02 " + "       " + "22 : Pattern22 " + "       " + "42 : Pattern42 " + "       " + "62 : Pattern62 " + "       " + "82 : Pattern82\n"+
-                                        "03 : Pattern03 " + "       " + "23 : Pattern23 " + "       " + "43 : Pattern43 " + "       " + "63 : Pattern63 " + "       " + "83 : Pattern83\n"+
-                                        "04 : Pattern04 " + "       " + "24 : Pattern24 " + "       " + "44 : Pattern44 " + "       " + "64 : Pattern64 " + "       " + "84 : Pattern84\n"+
-                                        "05 : Pattern05 " + "       " + "25 : Pattern25 " + "       " + "45 : Pattern45 " + "       " + "65 : Pattern65\n"+
-                                        "06 : Pattern06 " + "       " + "26 : Pattern26 " + "       " + "46 : Pattern46 " + "       " + "66 : Pattern66\n"+
-                                        "07 : Pattern07 " + "       " + "27 : Pattern27 " + "       " + "47 : Pattern47 " + "       " + "67 : Pattern67\n"+
-                                        "08 : Pattern08 " + "       " + "28 : Pattern28 " + "       " + "48 : Pattern48 " + "       " + "68 : Pattern68\n"+
-                                        "09 : Pattern09 " + "       " + "29 : Pattern29 " + "       " + "49 : Pattern49 " + "       " + "69 : Pattern69\n"+
-                                        "10 : Pattern10 " + "       " + "30 : Pattern30 " + "       " + "50 : Pattern50 " + "       " + "70 : Pattern70\n"+
+                    "03 : Pattern03 " + "       " + "23 : Pattern23 " + "       " + "43 : Pattern43 " + "       " + "63 : Pattern63 " + "       " + "83 : Pattern83\n"+
+                    "04 : Pattern04 " + "       " + "24 : Pattern24 " + "       " + "44 : Pattern44 " + "       " + "64 : Pattern64 " + "       " + "84 : Pattern84\n"+
+                    "05 : Pattern05 " + "       " + "25 : Pattern25 " + "       " + "45 : Pattern45 " + "       " + "65 : Pattern65\n"+
+                    "06 : Pattern06 " + "       " + "26 : Pattern26 " + "       " + "46 : Pattern46 " + "       " + "66 : Pattern66\n"+
+                    "07 : Pattern07 " + "       " + "27 : Pattern27 " + "       " + "47 : Pattern47 " + "       " + "67 : Pattern67\n"+
+                    "08 : Pattern08 " + "       " + "28 : Pattern28 " + "       " + "48 : Pattern48 " + "       " + "68 : Pattern68\n"+
+                    "09 : Pattern09 " + "       " + "29 : Pattern29 " + "       " + "49 : Pattern49 " + "       " + "69 : Pattern69\n"+
+                    "10 : Pattern10 " + "       " + "30 : Pattern30 " + "       " + "50 : Pattern50 " + "       " + "70 : Pattern70\n"+
 					"11 : Pattern11 " + "       " + "31 : Pattern31 " + "       " + "51 : Pattern51 " + "       " + "71 : Pattern71\n"+
-                                        "12 : Pattern12 " + "       " + "32 : Pattern32 " + "       " + "52 : Pattern52 " + "       " + "72 : Pattern72\n"+
-                                        "13 : Pattern13 " + "       " + "33 : Pattern33 " + "       " + "53 : Pattern53 " + "       " + "73 : Pattern73\n"+
-                                        "14 : Pattern14 " + "       " + "34 : Pattern34 " + "       " + "54 : Pattern54 " + "       " + "74 : Pattern74\n"+
-                                        "15 : Pattern15 " + "       " + "35 : Pattern35 " + "       " + "55 : Pattern55 " + "       " + "75 : Pattern75\n"+
-                                        "16 : Pattern16 " + "       " + "36 : Pattern36 " + "       " + "56 : Pattern56 " + "       " + "76 : Pattern76\n"+
-                                        "17 : Pattern17 " + "       " + "37 : Pattern37 " + "       " + "57 : Pattern57 " + "       " + "77 : Pattern77\n"+
-                                        "18 : Pattern18 " + "       " + "38 : Pattern38 " + "       " + "58 : Pattern58 " + "       " + "78 : Pattern78\n"+
-                                        "19 : Pattern19 " + "       " + "39 : Pattern39 " + "       " + "59 : Pattern59 " + "       " + "79 : Pattern79\n"+
-                                        "20 : Pattern20 " + "       " + "40 : Pattern40 " + "       " + "60 : Pattern60 " + "       " + "80 : Pattern80\n"+
-                                        "0 : Exit.\n");
+                    "12 : Pattern12 " + "       " + "32 : Pattern32 " + "       " + "52 : Pattern52 " + "       " + "72 : Pattern72\n"+
+                    "13 : Pattern13 " + "       " + "33 : Pattern33 " + "       " + "53 : Pattern53 " + "       " + "73 : Pattern73\n"+
+                    "14 : Pattern14 " + "       " + "34 : Pattern34 " + "       " + "54 : Pattern54 " + "       " + "74 : Pattern74\n"+
+                    "15 : Pattern15 " + "       " + "35 : Pattern35 " + "       " + "55 : Pattern55 " + "       " + "75 : Pattern75\n"+
+                	"16 : Pattern16 " + "       " + "36 : Pattern36 " + "       " + "56 : Pattern56 " + "       " + "76 : Pattern76\n"+
+                    "17 : Pattern17 " + "       " + "37 : Pattern37 " + "       " + "57 : Pattern57 " + "       " + "77 : Pattern77\n"+
+                	"18 : Pattern18 " + "       " + "38 : Pattern38 " + "       " + "58 : Pattern58 " + "       " + "78 : Pattern78\n"+
+                    "19 : Pattern19 " + "       " + "39 : Pattern39 " + "       " + "59 : Pattern59 " + "       " + "79 : Pattern79\n"+
+                    "20 : Pattern20 " + "       " + "40 : Pattern40 " + "       " + "60 : Pattern60 " + "       " + "80 : Pattern80\n"+
+                    "0 : Exit.\n");
                         System.out.println("Select pattern from above options");
                         int option = sc.nextInt();
 
