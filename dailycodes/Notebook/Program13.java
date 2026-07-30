@@ -1,12 +1,17 @@
 import java.util.*;
-class Demo{
-        void fun(int x , int y){
-                System.out.println("In fun - method");
-		int val = x + y;
-	        System.out.println(val);	
-        }
 
-        public static void main(String[] args){
+class Demo {
+
+	void fun(int x, int y) {
+
+		System.out.println("In fun - method");
+
+		int val = x + y;
+		System.out.println(val);
+	}
+
+	public static void main(String[] args) {
+
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter values :");
@@ -14,6 +19,6 @@ class Demo{
 		int num2 = sc.nextInt();
 
 		Demo obj = new Demo();
-		obj.fun(num1,num2);
-        }
+		obj.fun(num1, num2);
+	}
 }

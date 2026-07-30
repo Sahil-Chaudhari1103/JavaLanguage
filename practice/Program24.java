@@ -1,39 +1,24 @@
-import java.util.*;
 
-class Employee{
-	String empName;
-	static String companyName;
+class Demo {
 
-	static {
-		companyName = "Microsoft";
+	int x;
+
+	Demo() {
+
+		this();
+		System.out.println(x);
+		System.out.println("In no arg constructor");
 	}
 
-	{
-		System.out.println("New Employee :");
+	Demo(int x) {
+
+		this.x = x;
+		System.out.println("in para constructor");
 	}
 
-	Employee(String name){
-		this.empName = name;
-	}
+	public static void main(STring[] args) {
+		
+		Demo obj = new Demo();
 
-	void showEmployee(){
-		System.out.println("Employee Name : " + this.empName );
-	}
-
-	static void showCompany(){
-                System.out.println("Company Name :" + companyName);
-        }
-
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Enter employee name :");
-		String name = sc.nextLine();
-
-		showCompany();
-
-		Employee obj = new Employee(name);
-
-		obj.showEmployee();
 	}
 }

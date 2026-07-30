@@ -1,18 +1,18 @@
 
-
 class Demo {
 
         int x;
         int y;
 
-        Demo(){
+        Demo() {
+
                 System.out.println("No-arg Constructor");
-                System.out.println(x);   // this.x
-                System.out.println(y);   // this.y
-                this();                                       // error: call to this must be first statement in constructor
+                System.out.println(x); // this.x
+                System.out.println(y); // this.y
+                this(); // error: call to this must be first statement in constructor
         }
 
-        Demo(int x, int y){
+        Demo(int x, int y) {
 
                 this.x = x;
                 this.y = y;
@@ -20,7 +20,7 @@ class Demo {
                 System.out.println("In Constructor");
         }
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
 
                 Demo obj1 = new Demo();
 

@@ -4,15 +4,16 @@ class Demo {
         int x;
         int y;
 
-        Demo(){
-		this(50,100);                                     // error: recursive constructor invocation
+        Demo() {
+
+                this(50, 100); // error: recursive constructor invocation
                 System.out.println("No-arg Constructor");
-                System.out.println(x);   // this.x
-                System.out.println(y);   // this.y
+                System.out.println(x); // this.x
+                System.out.println(y); // this.y
 
         }
 
-        Demo(int x, int y){
+        Demo(int x, int y) {
 
                 this();
 
@@ -22,9 +23,9 @@ class Demo {
                 System.out.println("Para Constructor");
         }
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
 
-                Demo obj1 = new Demo(50,100);
+                Demo obj1 = new Demo(50, 100);
 
         }
 }

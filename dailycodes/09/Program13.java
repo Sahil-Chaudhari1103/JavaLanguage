@@ -1,10 +1,11 @@
 
-class IntegerCacheDemo{
-        public static void main(String[] args) {
-		int arr[] = {10,20,30,40,50};
+class IntegerCacheDemo {
 
-		int arr1[] = new int[]{10,20,30,40,50};
+	public static void main(String[] args) {
 
-		
+		int arr[] = { 10, 20, 30, 40, 50 };
+
+		int arr1[] = new int[] { 10, 20, 30, 40, 50 };
+
 	}
 }

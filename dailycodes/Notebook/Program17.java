@@ -1,19 +1,25 @@
-class Demo{
+class Demo {
+
 	int x = 10;
 	int y = 20;
-        Demo(){
-                System.out.println("In Constructor.");
-        }
 
-	void fun(){
+	Demo() {
+
+		System.out.println("In Constructor.");
+	}
+
+	void fun() {
+
 		System.out.println("In fun.");
 	}
 
-        public static void main(String[] args){
+	public static void main(String[] args) {
+
 		Demo obj = new Demo();
+		
 		System.out.println(obj.x);
 		System.out.println(obj.y);
 
 		obj.fun();
-        }
+	}
 }

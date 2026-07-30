@@ -1,7 +1,9 @@
 import java.io.*;
 
-class IODemo{
-        public static void main(String[] args) throws IOException{
+class IODemo {
+
+        public static void main(String[] args) throws IOException {
+
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
                 System.out.println("Enter your society name : ");
@@ -9,7 +11,7 @@ class IODemo{
 
                 System.out.println("Enter your wing : ");
                 char wing = (char) br.read();
-		br.skip(1);
+                br.skip(1);
 
                 System.out.println("Enter your flatNo : ");
                 int flatNo = Integer.parseInt(br.readLine());

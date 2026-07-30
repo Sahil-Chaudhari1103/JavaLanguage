@@ -1,17 +1,22 @@
 
-class Demo{
-        Demo(){
+class Demo {
+
+        Demo() {
+
                 System.out.println("Constructor");
         }
 
-        void fun(int x, int y){
+        void fun(int x, int y) {
+
                 System.out.println("In fun");
-		// return
+                // return
         }
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
+
                 Demo obj = new Demo();
-                obj.fun(20,50);   
+
+                obj.fun(20, 50);
                 // System.out.println(retVal);
         }
 }

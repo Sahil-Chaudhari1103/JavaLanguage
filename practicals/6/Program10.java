@@ -1,29 +1,32 @@
 import java.util.*;
 
-class SumDemo{
-        public static void main(String[] args){
-                Scanner sc = new Scanner(System.in);
+class SumDemo {
 
-                System.out.println("Enter range from :");
-                int n1 = sc.nextInt();
+	public static void main(String[] args) {
 
-                System.out.println("Enter range to :");
-                int n2 = sc.nextInt();
+		Scanner sc = new Scanner(System.in);
 
-                int sum = 0;
-		if(n1>0 && n2>1){
+		System.out.println("Enter range from :");
+		int n1 = sc.nextInt();
+
+		System.out.println("Enter range to :");
+		int n2 = sc.nextInt();
+
+		int sum = 0;
+		
+		if (n1 > 0 && n2 > 1) {
 			int i = n1;
-			while(i<=n2){
-                        	if(i%2==1){
-                                	sum = sum +i;
-                        	}
+			while (i <= n2) {
+				if (i % 2 == 1) {
+					sum = sum + i;
+				}
 				i++;
-                	}
+			}
 
-                	System.out.println(sum);
-		}else{
+			System.out.println(sum);
+		} else {
 			System.out.println("Invalid range number");
 		}
 
-        }
+	}
 }

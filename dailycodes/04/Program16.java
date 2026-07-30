@@ -1,13 +1,15 @@
 
-class Demo{
-        public static void main(String[] args){
+class Demo {
+
+	public static void main(String[] args) {
+
 		int num = -5;
 
-		if(num > 0){
+		if (num > 0) {
 			System.out.println("Positive Number");
-		}else if(num < 0){
+		} else if (num < 0) {
 			System.out.println("Negative Number");
-		}else{
+		} else {
 			System.out.println("Zero");
 		}
 	}

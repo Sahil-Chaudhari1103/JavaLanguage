@@ -1,17 +1,22 @@
+class Demo {
 
-class Demo{
-	int x;
-	Demo(){
-		this(20);
-		System.out.println(x);
-		System.out.println("In no arg constructor");
+	int x = 10;
+	static int y = 20;
+}
+
+class Memo extends Demo {
+
+	static int y = 30;
+
+	static {
+
+		System.out.println(Demo.y);
 	}
-	Demo(int x){
-		this.x=x;
-		System.out.println("in para constructor");
-	}
-	public static void main(String[] args){
-		Demo obj = new Demo();
-	
+}
+
+class Client {
+
+	public static void main(String[] args) {
+		Memo obj = new Memo();
 	}
 }

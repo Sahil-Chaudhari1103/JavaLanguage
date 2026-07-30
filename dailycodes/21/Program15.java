@@ -1,17 +1,21 @@
 
-class Demo{
+class Demo {
+
         int x = 10;
 
-        Demo(){
+        Demo() {
+
                 System.out.println("Demo Constructor");
         }
 
-        void fun(){
+        void fun() {
+
                 System.out.println("In fun-Demo");
                 System.out.println(x);
         }
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
+
                 Demo obj = new Demo();
                 // 1.memory allocation
                 // 2.Demo(obj)
@@ -22,19 +26,22 @@ class Demo{
         }
 }
 
-class Memo{
-        Memo(){
+class Memo {
+
+        Memo() {
+
                 System.out.println("No-args Memo Constructor");
         }
 
-        Memo(Demo obj){                                              
+        Memo(Demo obj) {
+
                 System.out.println("Para memo constructor");
         }
 }
 
-class Temo{
+class Temo {
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
 
                 Demo obj1 = new Demo();
 

@@ -1,5 +1,7 @@
-class StringDemo{
-        public static void main(String[] args){
+class StringDemo {
+
+        public static void main(String[] args) {
+
                 String str1 = "Kanha";
                 String str2 = "Kale";
                 String str3 = "KanhaKale";

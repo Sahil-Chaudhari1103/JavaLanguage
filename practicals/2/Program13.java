@@ -1,8 +1,8 @@
-class LogicalDemo{
-        public static void main(String[] args){
-        
+class LogicalDemo {
 
-                System.out.println(true&&false);
+        public static void main(String[] args) {
+
+                System.out.println(true && false);
 
         }
 }

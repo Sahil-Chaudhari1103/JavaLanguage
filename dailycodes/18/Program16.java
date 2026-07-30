@@ -3,19 +3,19 @@ class Demo {
 
         int x = 10;
 
-        Demo(){
+        Demo() {
 
                 System.out.println("No-args Constructor");
         }
 
-        Demo(int y){
-		this();
+        Demo(int y) {
+                this();
                 System.out.println("Para Constructor");
         }
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
 
-                //Demo obj = new Demo();
+                // Demo obj = new Demo();
 
                 Demo obj1 = new Demo(10);
         }

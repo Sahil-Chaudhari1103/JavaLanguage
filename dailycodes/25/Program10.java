@@ -5,52 +5,56 @@ class ICC {
 
         int totalTeams = 12;
 
-        ICC(){
+        ICC() {
+
                 System.out.println("International Cricket Council");
         }
 
-        void intlTournaments(){
+        void intlTournaments() {
+
                 System.out.println("Organizes World Cup, T20 World Cup, Champions Trophy");
         }
 }
 
-class BCCI extends ICC{
+class BCCI extends ICC {
 
         String president = "Mithun Manhas";
 
         int domesticTeams = 38;
 
-        BCCI(){
+        BCCI() {
+
                 System.out.println("Board of Control for Cricket in India");
         }
 
-        void domesticTournaments(){
+        void domesticTournaments() {
+
                 System.out.println("IPL, Ranji Trophy, Syed Mustaq Ali Trophy");
         }
 }
 
 class IPL extends BCCI {
-	
-	String sponsor = "TATA";
 
-	int totalTeams = 10;
+        String sponsor = "TATA";
 
-	IPL(){
-		
-		System.out.println("Indian Premier League");
-	}
+        int totalTeams = 10;
 
-	void iplInfo(){
-	
-		System.out.println("Sponsor : " + sponsor);
+        IPL() {
 
-		System.out.println("Total Teams : " + totalTeams);
-	}
+                System.out.println("Indian Premier League");
+        }
+
+        void iplInfo() {
+
+                System.out.println("Sponsor : " + sponsor);
+
+                System.out.println("Total Teams : " + totalTeams);
+        }
 }
 
 class Prekshak {
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
 
                 IPL obj = new IPL();
 
@@ -58,6 +62,6 @@ class Prekshak {
 
                 obj.domesticTournaments();
 
-		obj.iplInfo();
+                obj.iplInfo();
         }
 }

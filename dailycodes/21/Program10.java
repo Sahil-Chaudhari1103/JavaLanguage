@@ -1,27 +1,30 @@
 
-class Demo{
+class Demo {
 
         int x = 10;
         static int y = 20;
 
-        Demo(){
+        Demo() {
+
                 System.out.println("Demo Constructor");
         }
 
-        void fun(){
+        void fun() {
+
                 System.out.println("In fun-Demo");
         }
 
-        static void gun(){
+        static void gun() {
+
                 System.out.println("In gun-Demo");
         }
 
-        public static void main(String[] args){
-		
-		Demo obj = new Demo();
+        public static void main(String[] args) {
 
-		System.out.println(obj.x);
-		System.out.println(obj.y);
+                Demo obj = new Demo();
+
+                System.out.println(obj.x);
+                System.out.println(obj.y);
 
                 obj.gun();
                 obj.fun();

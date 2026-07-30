@@ -1,59 +1,115 @@
-import java.util.*;
 
-class FoodOrder{
-	String itemName;
-	int quantity;
-	double price;
+class CricketMatch {
 
-	FoodOrder(String itemName){
-		this.itemName = itemName;
-		this.quantity = 1;
+	boolean isTired = false;
+	boolean inningsCompleted = false;
 
-		if(itemName.equals("Samosa")){
-			price = 15;
-		}else if(itemName.equals("Tea")){
-                        this.price = 10;
-                }else if(itemName.equals("Coffee")){
-                        this.price = 20;
-                }
+	void liveMatch(Player p1, Substitute p2) {
+
+		System.out.println("India Won the Toss and Elected to bat First.");
+		System.out.println("Match Starts :");
+
+		p1.start();
+
+		try {
+			p1.join();
+		} catch (InterruptedException e) {
+
+		}
+
+		if (inningsCompleted == true) {
+			System.out.println("First innings total score 310 runs. Opposition requires a total of 311 runs to win.");
+			System.out.println("Second innings begins.");
+
+			p2.start();
+
+			try {
+				p2.join(1000);
+				p1 = new Player(this);
+				p1.start();
+				p1.join();
+			} catch (InterruptedException e) {
+
+			}
+			
+			System.out.println("Substituted player went outside of the field.");
+			System.out.println("Rohit is back on the field again. Match contines......");
+		}
+
 	}
 
-	FoodOrder(String itemName,int quantity){
-		this.itemName = itemName;
-		this.quantity = quantity;
+	synchronized void rohitSharma() {
 
-		if(itemName.equals("Samosa")){
-                        price = 15;
-                }else if(itemName.equals("Tea")){
-                        this.price = 10;
-                }else if(itemName.equals("Coffee")){
-                        this.price = 20;
-                }
+		if (!isTired) {
+			System.out.println("Rohit opens for india at strikers end.");
+			System.out.println("Rohit Scores 150 runs.");
+
+			isTired = true;
+			inningsCompleted = true;
+
+		} else {
+			System.out.println("Rohit is ready to play again.");
+			isTired = false;
+			notify();
+		}
+
 	}
 
-	void displayOrder(){
-		double bill = price * quantity;
-		System.out.println("Item name : " + this.itemName);
-		System.out.println("Item price : " + this.price);
-		System.out.println("Item quantity : " + this.quantity);
-		System.out.println("Total bill : " + bill);
+	synchronized void subPlayer() {
+
+		if (isTired) {
+			System.out.println("Rohit is substituted with new Player.");
+			System.out.println("Substitute player is ready to play.");
+			System.out.println("New player substitutes the tired player and comes on ground for fielding.");
+			try {
+				wait();
+			} catch (InterruptedException e) {
+
+			}
+		}
+	}
+}
+
+class Player extends Thread {
+
+	CricketMatch obj;
+
+	Player(CricketMatch obj) {
+
+		this.obj = obj;
 	}
 
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
+	public void run() {
 
-		System.out.println("Enter item name :");
-		String name = sc.nextLine();
+		obj.rohitSharma();
+	}
+}
 
-		System.out.println("Enter item quantity :");
-		int itemQuantity = sc.nextInt();
+class Substitute extends Thread {
 
-		FoodOrder obj1 = new FoodOrder(name);
-		FoodOrder obj2 = new FoodOrder(name,itemQuantity);
+	CricketMatch obj;
 
-		System.out.println("Order1 details : ");
-		obj1.displayOrder();
-		System.out.println("Order2 details : ");
-		obj2.displayOrder();
+	Substitute(CricketMatch obj) {
+
+		this.obj = obj;
+	}
+
+	public void run() {
+
+		obj.subPlayer();
+	}
+}
+
+class Client {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		CricketMatch obj = new CricketMatch();
+
+		Player p1 = new Player(obj);
+		Substitute p2 = new Substitute(obj);
+
+		obj.liveMatch(p1, p2);
+
 	}
 }

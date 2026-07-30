@@ -1,5 +1,7 @@
-class StringDemo{
-	public static void main(String[] args){
+class StringDemo {
+
+	public static void main(String[] args) {
+
 		String str1 = "Kanha";
 		String str2 = "Kale";
 		String str3 = "KanhaKale";
@@ -7,7 +9,6 @@ class StringDemo{
 		System.out.println(str1);
 		System.out.println(str2);
 		System.out.println(str3);
-
 
 		System.out.println(System.identityHashCode(str1));
 		System.out.println(System.identityHashCode(str2));

@@ -1,5 +1,7 @@
-class TwoDArray{
-        public static void main(String[] args){
-        	int arr2[][] = new int[][];
+class TwoDArray {
+
+	public static void main(String[] args) {
+
+		int arr2[][] = new int[][];
 	}
 }

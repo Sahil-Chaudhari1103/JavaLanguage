@@ -1,8 +1,10 @@
-class StringBufferDemo{
-        public static void main(String[] args){
-                StringBuffer sb = new StringBuffer();
+class StringBufferDemo {
 
-                System.out.println(sb);
+	public static void main(String[] args) {
+
+		StringBuffer sb = new StringBuffer();
+
+		System.out.println(sb);
 
 		System.out.println(sb.capacity());
 
@@ -14,5 +16,5 @@ class StringBufferDemo{
 
 		System.out.println(sb.capacity());
 
-        }
+	}
 }

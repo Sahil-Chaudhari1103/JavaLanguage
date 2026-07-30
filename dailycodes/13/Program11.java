@@ -1,5 +1,7 @@
-class StringBufferDemo{
-        public static void main(String[] args){
+class StringBufferDemo {
+
+        public static void main(String[] args) {
+
                 String str1 = new String();
                 System.out.println(str1);
 

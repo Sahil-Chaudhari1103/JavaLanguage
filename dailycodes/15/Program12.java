@@ -1,18 +1,25 @@
-class Demo{
-        void fun(){
+class Demo {
+
+        void fun() {
+
                 System.out.println("In fun - method");
         }
 
-        void gun(){
+        void gun() {
+
                 System.out.println("In gun - method");
         }
-        public static void main(String[] args){
-		int y = 20;
-		String name = "Kanha";
-		String str2 = new String("Kanha");
 
-		Demo obj = new Demo();
-		obj.fun();
-		obj.gun();
+        public static void main(String[] args) {
+
+                int y = 20;
+
+                String name = "Kanha";
+                String str2 = new String("Kanha");
+
+                Demo obj = new Demo();
+                
+                obj.fun();
+                obj.gun();
         }
 }

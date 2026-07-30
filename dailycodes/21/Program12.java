@@ -1,25 +1,27 @@
 
-class Demo{
+class Demo {
 
         int x = 10;
 
-        Demo(){
+        Demo() {
+
                 System.out.println("Demo Constructor");
         }
 
-        void fun(){
+        void fun() {
+
                 System.out.println("In fun-Demo");
-		System.out.println(x);
+                System.out.println(x);
         }
 
-        public static void main(String[] args){
+        public static void main(String[] args) {
 
                 Demo obj = new Demo();
-		// 1.memory allocation
-		// 2.Demo(obj)
+                // 1.memory allocation
+                // 2.Demo(obj)
 
                 obj.fun();
-		// obj.fun(obj)
+                // obj.fun(obj)
 
         }
 }
