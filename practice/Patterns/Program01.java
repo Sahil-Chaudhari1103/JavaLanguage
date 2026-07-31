@@ -1208,9 +1208,9 @@ class Pattern{
         }
 
 	void pattern75(int rows){
-                int mid = (int) (rows/2+1);
+        int mid = (int) (rows/2+1);
 		int num = 1;
-                int temp = mid;
+        int temp = mid;
 		int count = 0;
                 for(int i=1 ; i<=rows ; i++){                                       // 1  2  3  4  5           1  2  3  4  5  6
                         if(i<=mid){						    						//    2  3  4		          2  3  4  5
@@ -1843,157 +1843,157 @@ class Pattern{
                                         case 33:
                                                 obj.pattern33(rows);
                                                 break;
-					case 34:
+										case 34:
                                                 obj.pattern34(rows);
                                                 break;
-					case 35:
+										case 35:
                                                 obj.pattern35(rows);
                                                 break;
-					case 36:
+										case 36:
                                                 obj.pattern36(rows);
                                                 break;
-					case 37:
+										case 37:
                                                 obj.pattern37(rows);
                                                 break;
-					case 38:
+										case 38:
                                                 obj.pattern38(rows);
                                                 break;
-					case 39:
+										case 39:
                                                 obj.pattern39(rows);
                                                 break;
-					case 40:
+										case 40:
                                                 obj.pattern40(rows);
                                                 break;
-					case 41:
+										case 41:
                                                 obj.pattern41(rows);
                                                 break;
-					case 42:
+										case 42:
                                                 obj.pattern42(rows);
                                                 break;
-					case 43:
+										case 43:
                                                 obj.pattern43(rows);
                                                 break;
-					case 44:
+										case 44:
                                                 obj.pattern44(rows);
                                                 break;
-					case 45:
+										case 45:
                                                 obj.pattern45(rows);
                                                 break;
-					case 46:
+										case 46:
                                                 obj.pattern46(rows);
                                                 break;
-					case 47:
+										case 47:
                                                 obj.pattern47(rows);
                                                 break;
-					case 48:
+										case 48:
                                                 obj.pattern48(rows);
                                                 break;
-					case 49:
+										case 49:
                                                 obj.pattern49(rows);
                                                 break;
-					case 50:
+										case 50:
                                                 obj.pattern50(rows);
                                                 break;
-					case 51:
+										case 51:
                                                 obj.pattern51(rows);
                                                 break;
-					case 52:
+										case 52:
                                                 obj.pattern52(rows);
                                                 break;
-					case 53:
+										case 53:
                                                 obj.pattern53(rows);
                                                 break;
-					case 54:
+										case 54:
                                                 obj.pattern54(rows);
                                                 break;
-					case 55:
+										case 55:
                                                 obj.pattern55(rows);
                                                 break;
-					case 56:
+										case 56:
                                                 obj.pattern56(rows);
                                                 break;
-					case 57:
+										case 57:
                                                 obj.pattern57(rows);
                                                 break;
-					case 58:
+										case 58:
                                                 obj.pattern58(rows);
                                                 break;
-					case 59:
+										case 59:
                                                 obj.pattern59(rows);
                                                 break;
-					case 60:
+										case 60:
                                                 obj.pattern60(rows);
                                                 break;
-					case 61:
+										case 61:
                                                 obj.pattern61(rows);
                                                 break;
-					case 62:
+										case 62:
                                                 obj.pattern62(rows);
                                                 break;
-					case 63:
+										case 63:
                                                 obj.pattern63(rows);
                                                 break;
-					case 64:
+										case 64:
                                                 obj.pattern64(rows);
                                                 break;
-					case 65:
+										case 65:
                                                 obj.pattern65(rows);
                                                 break;
-					case 66:
+										case 66:
                                                 obj.pattern66(rows);
                                                 break;
-					case 67:
+										case 67:
                                                 obj.pattern67(rows);
                                                 break;
-					case 68:
+										case 68:
                                                 obj.pattern68(rows);
                                                 break;
-					case 69:
+										case 69:
                                                 obj.pattern69(rows);
                                                 break;
-					case 70:
+										case 70:
                                                 obj.pattern70(rows);
                                                 break;
-					case 71:
+										case 71:
                                                 obj.pattern71(rows);
                                                 break;
-					case 72:
+										case 72:
                                                 obj.pattern72(rows);
                                                 break;
-					case 73:
+										case 73:
                                                 obj.pattern73(rows);
                                                 break;
-					case 74:
+										case 74:
                                                 obj.pattern74(rows);
                                                 break;
-					case 75:
+										case 75:
                                                 obj.pattern75(rows);
                                                 break;
-					case 76:
+										case 76:
                                                 obj.pattern76(rows);
                                                 break;
-					case 77:
+										case 77:
                                                 obj.pattern77(rows);
                                                 break;
-					case 78:
+										case 78:
                                                 obj.pattern78(rows);
                                                 break;
-					case 79:
+										case 79:
                                                 obj.pattern79(rows);
                                                 break;
-					case 80:
+										case 80:
                                                 obj.pattern80(rows);
                                                 break;
-					case 81:
+										case 81:
                                                 obj.pattern81(rows);
                                                 break;
-					case 82:
+										case 82:
                                                 obj.pattern82(rows);
                                                 break;
-					case 83:
+										case 83:
                                                 obj.pattern83(rows);
                                                 break;
-					case 84:
+										case 84:
                                                 obj.pattern84(rows);
                                                 break;
                                         default :
